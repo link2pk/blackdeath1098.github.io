@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Heebo);
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
 @media(min-width:768px) {
   .navbar-default {
     -webkit-transition: all .35s;
@@ -53,10 +55,18 @@ html {
     background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
     background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
     background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    z-index: 10;
+    padding-bottom: 0%;
+    position: relative;
+    align-self: top;
+    
+    
 }
 /*section parts */
 
-
+li, a{
+    color:black;
+}
 .cocaine-section {
     padding-top: 10%;
     text-align: center;
@@ -64,7 +74,7 @@ html {
 }
 
 .about-section {
-    padding-top: 50%;
+    padding-top: 30%;
     text-align: center;
     background-color: #f2f2f2;
 }
@@ -80,7 +90,11 @@ html {
     text-align: center;
     background: #1affa3;
 }
-
+.heading{
+    padding-top: 20%;
+    text-align: center;
+    position: relative;
+}
 
 
 .top-nav-collapse {
@@ -111,6 +125,7 @@ p.body{
     text-align: left;
     text-indent: 40px;
     font-size: 16px;
+    font-family: 'Lato', sans-serif;
 }
 ul.body, li.body {
     text-align: left;
@@ -186,19 +201,22 @@ a:hover, a:active, a:visited{
 
 
 .image-wrapper{
-    position: relative;
+    position: absolute;
     text-align: center;
-    
+    padding-top:0%;
+    display: inline-block;
 }
 .scale-image{
     display: block;
     width:auto;
-    max-width:105%;
-    height:auto;
-    position: absolute;
+    max-width:100%;
+    position: relative;
+    padding-bottom: 0%;
+    
+   
 }
 h1.image{
-    position: relative;
-    color: white;
+    
+    color: #f0f0f0;
 }
 
